@@ -1,0 +1,5 @@
+Partial View
+View Components
+Database Entities
+JavaScript
+Login Page
