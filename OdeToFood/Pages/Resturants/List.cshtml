@@ -1,0 +1,56 @@
+﻿@page
+@model OdeToFood.Pages.Resturants.ListModel
+@{
+    ViewData["Title"] = "Resturants";
+}
+
+<h1>Resturants</h1>
+
+<form method="get">
+    <div class="input-group mb-3">
+        <input type="search" class="form-control" placeholder="Search Resturants"
+               aria-label="Search Resturants" aria-describedby="basic-addon2"
+               asp-for="SearchTerm" />
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary">Search</button>
+        </div>
+    </div>
+</form>
+
+@foreach (var res in Model.Resturants)
+{
+    <partial name="_Summary" model="res"/>
+}
+
+    @*<table class="table">
+        @foreach (var res in Model.Resturants)
+        {
+            <tr>
+                <td>@res.Name</td>
+                <td>@res.Location</td>
+                <td>@res.Cuisine</td>
+                <td>
+                    <a class="btn btn-link"
+                       asp-page="./Detail"
+                       asp-route-resturantId="@res.Id"><img src="~/open-iconic-master/png/zoom-in-2x.png" /></a>
+                </td>
+                <td>
+                    <a class="btn btn-link"
+                       asp-page="./Edit"
+                       asp-route-resturantId="@res.Id"><img src="~/open-iconic-master/png/pencil-2x.png" /></a>
+                </td>
+                <td>
+                    <a class="btn btn-link"
+                       asp-page="./Delete"
+                       asp-route-resturantId="@res.Id"><img src="~/open-iconic-master/png/delete-2x.png" /></a>
+                </td>
+            </tr>
+        }
+    </table>*@
+
+    <a asp-page="./Edit" class="btn btn-link">Add Resturants</a>
+    @section footer
+{
+        <div>@Model.Message</div>
+
+    }
