@@ -31,3 +31,7 @@
 
     <button type="submit" class="btn btn-outline-primary">Save</button>
 </form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

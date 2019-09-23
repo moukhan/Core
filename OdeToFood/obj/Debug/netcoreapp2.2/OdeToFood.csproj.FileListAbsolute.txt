@@ -44,3 +44,4 @@ F:\Projects\repos\Core\OdeToFood\obj\Debug\netcoreapp2.2\Razor\Pages\R2\Delete.g
 F:\Projects\repos\Core\OdeToFood\obj\Debug\netcoreapp2.2\Razor\Pages\R2\Details.g.cshtml.cs
 F:\Projects\repos\Core\OdeToFood\obj\Debug\netcoreapp2.2\Razor\Pages\R2\Edit.g.cshtml.cs
 F:\Projects\repos\Core\OdeToFood\obj\Debug\netcoreapp2.2\Razor\Pages\R2\Index.g.cshtml.cs
+F:\Projects\repos\Core\OdeToFood\obj\Debug\netcoreapp2.2\Razor\Pages\Resturants\ClientResturant.g.cshtml.cs
